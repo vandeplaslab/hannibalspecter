@@ -19,9 +19,9 @@ install_requires = [
 # extras_require["complete"] = sorted({v for req in extras_require.values() for v in req})
 
 packages = [
-    "hannibalspecter",
-    "hannibalspecter.decomposition",
-    "hannibalspecter.math",
+    "src",
+    "src.decomposition",
+    "src.math",
 ]
 
 tests = [p + ".tests" for p in packages]
