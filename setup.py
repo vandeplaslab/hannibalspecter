@@ -21,29 +21,20 @@ install_requires = [
 packages = [
     "hannibal_specter",
     "hannibal_specter.decomposition",
-    "hannibal_specter.data",
-    "hannibal_specter.fake",
-    "hannibal_specter.file",
-    "hannibal_specter.gridsearch",
-    "hannibal_specter.template",
-    "hannibal_specter.preprocess",
-    "hannibal_specter.plot",
-    "hannibal_specter.quality",
-    "hannibal_specter.varia",
     "hannibal_specter.math",
 ]
 
 tests = [p + ".tests" for p in packages]
 
 setuptools.setup(
-    name="hannibal-specter",
+    name="hannibalspecter",
     version="0.0.1",
     author="R.A.R. MOENS",
     author_email="rogermoens@delfius.nl",
     description="A small package for robust matrix decomposition.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/RogerMoens/hannibal-specter",
+    url="https://github.com/vandeplas/hannibalspecter",
     packages=packages + tests,
     install_requires=install_requires,
     classifiers=[
